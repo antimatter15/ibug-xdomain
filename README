@@ -1,0 +1,36 @@
+ _ _                 
+(b)e|                
+ _|c|__  _   _  __ _ 
+|a|u'se\|n| |o|/re`a|
+|d|m|e)i|s|e|v|e(r|t|
+|r|u.ly/ \co,m|\pl,e|
+                __/t|
+               |ewi/   
+
+===========
+===== t====
+====== h===
+= o==== u==
+= t===== a=
+======== s=
+======== c=
+= i==== i==
+= a=== r===
+===== t====
+===========
+
+Here's the magical ibug project i hacked to use cross domain xhr instead of the 
+normal iframe communication system, it works pretty in my experience except for 
+the bug where the results from the client get repeated thrice for no good 
+reason, i dont use it anymore but it does seem to work pretty well, i used it 
+for phonegap because i didnt feel like using debug.log and it didnt really allow 
+me to type code in there while the app was running, though theres probably 
+another way to do it without my weird script, this does work 
+
+it's based off of http://www.joehewitt.com/blog/firebug_for_iph.php so the same rules basically apply
+
+
+1. Open your terminal and cd to the ibug directory that you just unzipped
+2. Run python ibug.py launch - it will start the web server and open the console in your browser. If you don't want to open the console, remove the launch argument.
+3. Copy the snippet of HTML that you see in the console and paste it into the head of any HTML pages you want to debug on your iPhone
+4. That's it! console.log() calls on the phone will now show up in your browser, and you can use the command line to enter JavaScript commands that execute on the phone. To stop the server, just hit Ctrl-C.
